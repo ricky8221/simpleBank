@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/db/migration/000001_init_shcema.down.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/db/migration/000001_init_shcema.up.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/db/query/account.sql" dialect="GenericSQL" />
   </component>
 </project>

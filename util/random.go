@@ -1,4 +1,4 @@
-package uti
+package util
 
 import (
 	"math/rand"
@@ -18,6 +18,7 @@ func RandomInt(min, max int64) int64 {
 // RandomString generator
 func RandomString(n int) string {
 	var sb strings.Builder
+	const alphabet = "abcdefghijklmnopqrstuvwxyz"
 	k := len(alphabet)
 
 	for i := 0; i < n; i++ {
@@ -28,7 +29,7 @@ func RandomString(n int) string {
 }
 
 // RandomOwner generator
-func randomOwner() string {
+func RandomOwner() string {
 	return RandomString(6)
 }
 
