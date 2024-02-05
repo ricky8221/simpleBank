@@ -4,6 +4,7 @@ import (
 	"math/rand"
 	"strings"
 	"time"
+	"unicode"
 )
 
 func init() {
@@ -23,6 +24,9 @@ func RandomString(n int) string {
 
 	for i := 0; i < n; i++ {
 		c := alphabet[rand.Intn(k)]
+		if i == 0 {
+			c = byte(unicode.ToUpper(rune(c)))
+		}
 		sb.WriteByte(c)
 	}
 	return sb.String()

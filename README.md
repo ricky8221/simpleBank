@@ -5,7 +5,7 @@
 * Postgres QL
 * sqlc
 * Docker
-* kubernetes
+* Kubernetes
 * gRPC
 * AWS
 * Redis
