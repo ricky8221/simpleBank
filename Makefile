@@ -8,7 +8,7 @@ gotoDb:
 	 docker exec -it postgresSimpleBank psql -U root simple_bank
 
  setPostgres:
-	docker run --name postgresSimpleBank -p 5433:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=nde2024 -d postgres
+	docker run --name postgresSimpleBank -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=nde2024 -d postgres
 
 stopPostgres:
 	docker stop postgresSimpleBank;
