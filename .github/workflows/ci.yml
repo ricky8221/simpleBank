@@ -43,6 +43,9 @@ jobs:
           sudo mv migrate /usr/bin
           which migrate
 
+      - name: List directory contents
+        run: ls -l
+
       - name: Run migrations
         run: make migrateUp
 
