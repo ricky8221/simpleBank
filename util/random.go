@@ -1,6 +1,7 @@
 package util
 
 import (
+	"fmt"
 	"github.com/go-playground/locales/currency"
 	"math/rand"
 	"strings"
@@ -48,4 +49,8 @@ func RandomCurrency() string {
 	currencies := []string{string(currency.USD), EUR, CAD}
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
+}
+
+func RandomEmail() string {
+	return fmt.Sprintf("%s@email.com", RandomString(6))
 }
