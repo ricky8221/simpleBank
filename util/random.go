@@ -2,7 +2,6 @@ package util
 
 import (
 	"fmt"
-	"github.com/go-playground/locales/currency"
 	"math/rand"
 	"strings"
 	"time"
@@ -46,7 +45,7 @@ func RandomMoney() int64 {
 
 // RandomCurrency generator
 func RandomCurrency() string {
-	currencies := []string{string(currency.USD), EUR, CAD}
+	currencies := []string{EUR, CAD}
 	n := len(currencies)
 	return currencies[rand.Intn(n)]
 }
